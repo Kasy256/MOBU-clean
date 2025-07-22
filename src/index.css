@@ -1,0 +1,131 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+body.dark-mode {
+  background-color: #181a1b;
+  color: #f1f1f1;
+}
+
+body.dark-mode .settings-page {
+  background-color: #181a1b;
+}
+
+body.dark-mode .settings-container {
+  background-color: transparent;
+}
+
+body.dark-mode .settings-section {
+  background-color: #23272b;
+  border-color: #333;
+}
+
+body.dark-mode .page-title,
+body.dark-mode .section-title,
+body.dark-mode .setting-label {
+  color: #f1f1f1;
+}
+
+body.dark-mode .page-subtitle,
+body.dark-mode .setting-description {
+  color: #b0b0b0;
+}
+
+body.dark-mode .setting-select {
+  background-color: #23272b;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark-mode .setting-select:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+}
+
+body.dark-mode .toggle-slider {
+  background-color: #444;
+}
+
+body.dark-mode .toggle-switch input:checked + .toggle-slider {
+  background-color: #007aff;
+}
+
+body.dark-mode .btn,
+body.dark-mode .btn-primary,
+body.dark-mode .btn-ghost {
+  background-color: #23272b;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #007aff;
+  color: #fff;
+}
+
+body.dark-mode .btn-ghost:hover {
+  background-color: #333;
+}

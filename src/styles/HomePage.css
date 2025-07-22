@@ -1,0 +1,151 @@
+.home-page {
+  min-height: calc(100vh - 64px);
+}
+
+.hero-section {
+  padding: 80px 24px;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.announcement-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.banner-label {
+  background-color: #00d4aa;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.banner-text {
+  color: #333333;
+  font-weight: 500;
+}
+
+.banner-link {
+  color: #666666;
+  cursor: pointer;
+}
+
+.banner-link:hover {
+  color: #000000;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000000;
+  line-height: 1.2;
+}
+
+.templates-section {
+  padding: 80px 24px;
+  background-color: white;
+}
+
+.community-section {
+  padding: 80px 24px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.section-subtitle {
+  color: #666666;
+  margin-bottom: 48px;
+  font-size: 18px;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.community-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.community-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-preview {
+  height: 200px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-placeholder {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 20px 8px;
+  color: #000000;
+}
+
+.card-description {
+  color: #666666;
+  margin: 0 20px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 16px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .templates-section,
+  .community-section {
+    padding: 40px 16px;
+  }
+
+  .community-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
