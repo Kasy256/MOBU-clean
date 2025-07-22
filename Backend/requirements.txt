@@ -1,0 +1,9 @@
+Flask
+flask-cors
+firebase-admin
+openai
+python-dotenv
+google-cloud-firestore
+paystackapi
+requests
+gunicorn 
