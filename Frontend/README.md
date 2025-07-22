@@ -1,12 +1,43 @@
-# React + Vite
+# MoBu – Mobile App Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Demo: mobu-app.web.app](https://mobu-app.web.app)
 
-Currently, two official plugins are available:
+MoBu is an AI-powered platform that lets you generate, preview, and download production-ready React Native mobile app screens in seconds. Describe your app idea or UI in natural language, and MoBu uses OpenAI to generate clean, functional React Native code styled with Tailwind CSS (via nativewind). You can save your projects, manage your code, and download a ready-to-run Expo project zip.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **AI Code Generation:** Instantly generate React Native screens from text prompts.
+- **Expo-Ready Downloads:** Download your generated code as a ready-to-run Expo project.
+- **Project Management:** Save, edit, and delete your generated projects.
+- **User Authentication:** Secure login with Firebase Authentication.
+- **Billing Integration:** Paystack integration for premium features.
+- **Cloud Storage:** All your projects are securely stored in Firebase Firestore.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend:** React, Vite, React Router, Firebase JS SDK, PrismJS (for code highlighting)
+- **Backend:** Python, Flask, Firebase Admin SDK, OpenAI API, Paystack API
+- **Cloud:** Firebase Hosting, Firestore, Firebase Authentication
+
+## Getting Started
+
+1. **Clone the repository**
+2. **Install dependencies**
+   ```sh
+   cd Frontend
+   npm install
+   ```
+3. **Run the development server**
+   ```sh
+   npm run dev
+   ```
+4. **Visit the app:** [http://localhost:5173](http://localhost:5173) or [mobu-app.web.app](https://mobu-app.web.app)
+
+## Project Structure
+
+- `Frontend/` – React app (Vite, Firebase, UI)
+- `Backend/` – Flask API (OpenAI, Firestore, Paystack)
+
+## License
+
+This project is for educational and demonstration
